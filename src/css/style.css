@@ -154,7 +154,6 @@ nav {
     display: none;
   }
   main .product {
-    margin: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -205,6 +204,100 @@ nav {
   main .product .card--women .product--image img {
     width: 100%;
     margin-bottom: -5px;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1rem 0;
+  }
+  .main-content .filter {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .filter .filter--item {
+    border: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 5px 0;
+    padding: 7px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 14px;
+  }
+  .side-bar {
+    background: #fff;
+    margin-right: 1.5rem;
+  }
+  .applied-filter {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .applied-filter .applied-title {
+    font-weight: 700;
+  }
+  .applied-filter a {
+    color: #a10550;
+  }
+  .out-of-stock {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .out-of-stock .stock--btn {
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid red;
+  }
+  .out-of-stock .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  .out-of-stock .switch .switch--btn {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .out-of-stock .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a10550;
+    transition: 0.4s;
+  }
+  .out-of-stock .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  .out-of-stock .switch--btn:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .out-of-stock .slider.round {
+    border-radius: 34px;
+  }
+  .out-of-stock .slider.round:before {
+    border-radius: 50%;
   }
 }
 @media screen and (min-width: 576px) {
