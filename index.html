@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>beautya</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -51,7 +52,6 @@
     </header>
 
     <main>
-      <!-- Products -->
       <div class="container">
         <div class="breadcrumb">
           <span>Home</span>
@@ -82,7 +82,208 @@
 
         <div class="main-content">
           <aside>
-            <div class="side-bar">
+            <div class="sidebar-sm">
+              <p class="sidebar--title">Filter</p>
+              <img
+                src="src/images/main/times.png"
+                alt="times-btn"
+                class="times-btn"
+              />
+              <div class="out-of-stock">
+                <p>out of stock items</p>
+
+                <label class="switch">
+                  <input type="checkbox" class="switch--btn" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="category-section">
+                <div class="category--header">
+                  <p class="category--title">Category</p>
+                  <img src="src/images/main/arrow-up.png" alt="arrowup-icon" />
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" class="category--btn" id="cleaners" />
+                  <label for="cleaners">Cleaners</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input
+                    type="checkbox"
+                    id="exfolidators"
+                    class="category--btn"
+                  />
+                  <label for="exfolidators">exfolidators</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">toners</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">retinols</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">peels and masques</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">moisturiser</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">night cream</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">facial oil</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">sunscreen</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">eye care</label>
+                </div>
+              </div>
+
+              <div class="category-section">
+                <div class="category--header">
+                  <p class="category--title">skin condition</p>
+                  <img src="src/images/main/arrow-up.png" alt="arrowup-icon" />
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" class="category--btn" id="cleaners" />
+                  <label for="cleaners">brightening</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input
+                    type="checkbox"
+                    id="exfolidators"
+                    class="category--btn"
+                  />
+                  <label for="exfolidators">hydration</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">acne</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">anti-ageing</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">redness</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">sensitive skin</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">sun protection</label>
+                </div>
+              </div>
+
+              <div class="category-section">
+                <div class="category--header">
+                  <p class="category--title">featured</p>
+                  <img src="src/images/main/arrow-up.png" alt="arrowup-icon" />
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" class="category--btn" id="cleaners" />
+                  <label for="cleaners">new</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input
+                    type="checkbox"
+                    id="exfolidators"
+                    class="category--btn"
+                  />
+                  <label for="exfolidators">best sellers</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">travel size</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">professional treatments</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">daily defense</label>
+                </div>
+              </div>
+
+              <div class="category-section">
+                <div class="category--header">
+                  <p class="category--title">price</p>
+                  <img src="src/images/main/arrow-up.png" alt="arrowup-icon" />
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" class="category--btn" id="cleaners" />
+                  <label for="cleaners">$50.00 - $150.00</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input
+                    type="checkbox"
+                    id="exfolidators"
+                    class="category--btn"
+                  />
+                  <label for="exfolidators">$150.00 - $250.00</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">$250.00 - $350.00</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">$350.00 - $450.00</label>
+                </div>
+
+                <div class="category--buttons">
+                  <input type="checkbox" id="toners" class="category--btn" />
+                  <label for="toners">$450.00 - $550.00</label>
+                </div>
+              </div>
+
+              <div class="category--button">
+                <button class="category--btn">Clear Filters</button>
+                <button class="category--btn apply--btn">Apply Filters</button>
+              </div>
+            </div>
+
+            <div class="sidebar">
               <div class="applied-filter">
                 <p class="applied-title">Applied filters</p>
 
@@ -104,14 +305,295 @@
                 <p>out of stock items</p>
 
                 <label class="switch">
-                  <input type="checkbox" class="switch--btn"/>
+                  <input type="checkbox" class="switch--btn" />
                   <span class="slider"></span>
                 </label>
               </div>
 
               <div class="category">
                 <div class="category--title">
-                  <p>Category</p>
+                  <div class="category-section">
+                    <div class="category--header">
+                      <p class="category--title">Category</p>
+                      <img
+                        src="src/images/main/arrow-up.png"
+                        alt="arrowup-icon"
+                      />
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        class="category--btn"
+                        id="cleaners"
+                      />
+                      <label for="cleaners">Cleaners</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="exfolidators"
+                        class="category--btn"
+                      />
+                      <label for="exfolidators">exfolidators</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">toners</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">retinols</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">peels and masques</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">moisturiser</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">night cream</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">facial oil</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">sunscreen</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">eye care</label>
+                    </div>
+                  </div>
+
+                  <div class="category-section">
+                    <div class="category--header">
+                      <p class="category--title">skin condition</p>
+                      <img
+                        src="src/images/main/arrow-up.png"
+                        alt="arrowup-icon"
+                      />
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        class="category--btn"
+                        id="cleaners"
+                      />
+                      <label for="cleaners">brightening</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="exfolidators"
+                        class="category--btn"
+                      />
+                      <label for="exfolidators">hydration</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">acne</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">anti-ageing</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">redness</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">sensitive skin</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">sun protection</label>
+                    </div>
+                  </div>
+
+                  <div class="category-section">
+                    <div class="category--header">
+                      <p class="category--title">featured</p>
+                      <img
+                        src="src/images/main/arrow-up.png"
+                        alt="arrowup-icon"
+                      />
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        class="category--btn"
+                        id="cleaners"
+                      />
+                      <label for="cleaners">new</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="exfolidators"
+                        class="category--btn"
+                      />
+                      <label for="exfolidators">best sellers</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">travel size</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">professional treatments</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">daily defense</label>
+                    </div>
+                  </div>
+
+                  <div class="category-section">
+                    <div class="category--header">
+                      <p class="category--title">price</p>
+                      <img
+                        src="src/images/main/arrow-up.png"
+                        alt="arrowup-icon"
+                      />
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        class="category--btn"
+                        id="cleaners"
+                      />
+                      <label for="cleaners">$50.00 - $150.00</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="exfolidators"
+                        class="category--btn"
+                      />
+                      <label for="exfolidators">$150.00 - $250.00</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">$250.00 - $350.00</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">$350.00 - $450.00</label>
+                    </div>
+
+                    <div class="category--buttons">
+                      <input
+                        type="checkbox"
+                        id="toners"
+                        class="category--btn"
+                      />
+                      <label for="toners">$450.00 - $550.00</label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
